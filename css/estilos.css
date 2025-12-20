@@ -1,7 +1,14 @@
+:root {
+    --fundo-base: #0b1220;
+    --cor-header: #1e293b;
+    --texto-principal: #f3f4f6;
+    --destaques: #38bdf8;
+    --detalhes: #facc15;
+}
 /* Meu Reset CSS */
 * {
     font-size: 16px;
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
@@ -26,8 +33,8 @@ img {
 /* Fim Reset CSS */
 
 body {
-    background-color: #0b1220;
-    color: #f3f4f6;
+    background-color: var(--fundo-base);
+    color: var(--texto-principal);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     overflow: hidden;
@@ -38,13 +45,13 @@ a {
     transition: .3s ease;
 }
 
-.container {
-    width: min(1200px, 92vw);
-    margin-inline: auto;
-}
-
-
 /* HEADER */
+
+.header {
+    background-color: var(--cor-header);
+    padding: 1.5rem 1rem;
+    border-bottom: 2px solid var(--destaques);
+}
 
 .header-group {
     display: flex;
@@ -54,11 +61,39 @@ a {
 }
 
 .header-group img {
+    max-width: 150px;
+    height: auto;
     padding: 2rem 0 4rem;
 }
+
+/* Navegação */
 .nav-ul {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     gap: 2.5rem;
+}
+
+.nav-link-anchor {
+    color: var(--texto-principal);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1.5rem; /* TODO Verificar esse valor */
+    transition: color .3s;
+}
+
+.nav-link-anchor:hover {
+    color: var(--destaques);
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440) {
+
 }
