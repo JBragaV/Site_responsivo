@@ -1,38 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web - Design Digital</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Agência Criativa Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="header">
-        <div class="header-group">
-            <img src="#" alt="Logo">
-            <nav class="nav-principal">
-                <ul class="nav-ul">
-                    <li class="nav-link">
-                        <a href="#" class="nav-link-anchor">Home</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="" class="nav-link-anchor">Sobre Nós</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="" class="nav-link-anchor">Serviços</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="" class="nav-link-anchor">Depoimentos</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="" class="nav-link-anchor">Contato</a>
-                    </li>
+        <div class="container header-container">
+            <div class="logo">Agência Criativa<span>.</span></div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato" class="btn-contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
 
-    </main>
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Transformamos ideias em <span class="highlight">Experiências Digitais</span></h1>
+            <p>Design moderno, desenvolvimento web e estratégias de marca para elevar o seu negócio.</p>
+            <a href="#servicos" class="btn-primary">Conheça nossos serviços</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="container sobre-container">
+            <div class="sobre-texto">
+                <h2>Sobre a Agência</h2>
+                <p>Somos apaixonados por criar conexões entre marcas e pessoas. A Agência Criativa Web nasceu com o propósito de unir estética e funcionalidade.</p>
+                <p><strong>Nossos Valores:</strong> Inovação, Transparência e Foco no Usuário.</p>
+            </div>
+            <div class="sobre-img">
+                <img 
+                    src="https://placehold.co/600x400/252f3f/FFF?text=Equipe+Criativa" 
+                    srcset="https://placehold.co/300x200/252f3f/FFF?text=Equipe+Mobile 480w, 
+                            https://placehold.co/600x400/252f3f/FFF?text=Equipe+Desktop 800w"
+                    sizes="(max-width: 600px) 100vw, 50vw"
+                    alt="Equipe da Agência trabalhando"
+                >
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="grid-servicos">
+                <div class="card-servico">
+                    <h3>Design Gráfico</h3>
+                    <p>Identidade visual completa, logotipos e materiais publicitários que marcam presença.</p>
+                </div>
+                <div class="card-servico">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites responsivos, rápidos e otimizados para SEO utilizando as melhores tecnologias.</p>
+                </div>
+                <div class="card-servico">
+                    <h3>Branding</h3>
+                    <p>Estratégia de marca para posicionar sua empresa corretamente no mercado.</p>
+                </div>
+                <div class="card-servico">
+                    <h3>Marketing Digital</h3>
+                    <p>Gestão de redes sociais e tráfego pago para alavancar suas vendas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <h2 class="text-center">O que dizem nossos clientes</h2>
+            <div class="flex-depoimentos">
+                <div class="card-depoimento">
+                    <p>"A Agência Criativa mudou a cara da minha empresa. O site novo triplicou nossos contatos!"</p>
+                    <span>- Ana Souza, CEO da TechOne</span>
+                </div>
+                <div class="card-depoimento">
+                    <p>"Profissionalismo e design impecável. A equipe entendeu exatamente o que eu precisava."</p>
+                    <span>- Carlos Mendes, Arquiteto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section bg-dark">
+        <div class="container contato-container">
+            <div class="contato-info">
+                <h2>Vamos conversar?</h2>
+                <p>Entre em contato para um orçamento sem compromisso.</p>
+                <ul>
+                    <li>📍 Av. Minha Avenida, 2312 - Sorocaba, SP</li>
+                    <li>📞 (15) 99999-8888</li>
+                    <li>✉️ contato@agenciacriativa.web</li>
+                </ul>
+            </div>
+            <form class="form-contato">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Agência Criativa Web. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
