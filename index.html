@@ -10,42 +10,42 @@
 <body>
 
     <header class="header">
-        <div class="container header-container">
-            <div class="logo">Agência Criativa<span>.</span></div>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <div class="container header__container">
+            <div class="header__logo">Agência Criativa.</div>
+            <div class="menu-hamburger header__hamburger">
+                <div class="menu-hamburger__bar"></div>
+                <div class="menu-hamburger__bar"></div>
+                <div class="menu-hamburger__bar"></div>
             </div>
             <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato" class="btn-contato">Contato</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#servicos">Serviços</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav__item"><a class="nav__link nav__btn-contato" href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1>Transformamos ideias em <span class="highlight">Experiências Digitais</span></h1>
-            <p>Design moderno, desenvolvimento web e estratégias de marca para elevar o seu negócio.</p>
-            <a href="#servicos" class="btn-primary">Conheça nossos serviços</a>
+    <section id="home" class="home">
+        <div class="container home__content">
+            <h1 class="home__titulo-principal">Transformamos ideias em <span class="home__titulo-principal--highlight">Experiências Digitais</span></h1>
+            <p class="home__texto center">Design moderno, desenvolvimento web e estratégias de marca para elevar o seu negócio.</p>
+            <a href="#servicos" class="home__link btn-primary">Conheça nossos serviços</a>
         </div>
     </section>
 
-    <section id="sobre" class="section">
-        <div class="container sobre-container">
-            <div class="sobre-texto">
-                <h2>Sobre a Agência</h2>
+    <section id="sobre" class="section sobre">
+        <div class="container sobre__container">
+            <div class="sobre__texto">
+                <h2 class="sobre__titulo center">Sobre a Agência</h2>
                 <p>Somos apaixonados por criar conexões entre marcas e pessoas. A Agência Criativa Web nasceu com o propósito de unir estética e funcionalidade.</p>
                 <p><strong>Nossos Valores:</strong> Inovação, Transparência e Foco no Usuário.</p>
             </div>
-            <div class="sobre-img">
-                <img 
+            <div class="sobre__img img center">
+                <img class="img-responsiva"
                     src="https://placehold.co/600x400/252f3f/FFF?text=Equipe+Criativa" 
                     srcset="https://placehold.co/300x200/252f3f/FFF?text=Equipe+Mobile 480w, 
                             https://placehold.co/600x400/252f3f/FFF?text=Equipe+Desktop 800w"
@@ -56,23 +56,23 @@
         </div>
     </section>
 
-    <section id="servicos" class="section bg-light">
-        <div class="container">
-            <h2 class="text-center">Nossos Serviços</h2>
-            <div class="grid-servicos">
-                <div class="card-servico">
+    <section id="servicos" class="section servicos bg-light">
+        <div class="container servicos__container">
+            <h2 class="center">Nossos Serviços</h2>
+            <div class="servicos__grid card">
+                <div class="card__servico">
                     <h3>Design Gráfico</h3>
                     <p>Identidade visual completa, logotipos e materiais publicitários que marcam presença.</p>
                 </div>
-                <div class="card-servico">
+                <div class="card__servico">
                     <h3>Desenvolvimento Web</h3>
                     <p>Sites responsivos, rápidos e otimizados para SEO utilizando as melhores tecnologias.</p>
                 </div>
-                <div class="card-servico">
+                <div class="card__servico">
                     <h3>Branding</h3>
                     <p>Estratégia de marca para posicionar sua empresa corretamente no mercado.</p>
                 </div>
-                <div class="card-servico">
+                <div class="card__servico">
                     <h3>Marketing Digital</h3>
                     <p>Gestão de redes sociais e tráfego pago para alavancar suas vendas.</p>
                 </div>
@@ -80,15 +80,15 @@
         </div>
     </section>
 
-    <section id="depoimentos" class="section">
-        <div class="container">
-            <h2 class="text-center">O que dizem nossos clientes</h2>
-            <div class="flex-depoimentos">
-                <div class="card-depoimento">
+    <section id="depoimentos" class="section depoimentos">
+        <div class="container depoimentos__container">
+            <h2 class="depoimentos__titulo center">O que dizem nossos clientes</h2>
+            <div class="depoimentos__flex card">
+                <div class="card__depoimento">
                     <p>"A Agência Criativa mudou a cara da minha empresa. O site novo triplicou nossos contatos!"</p>
                     <span>- Ana Souza, CEO da TechOne</span>
                 </div>
-                <div class="card-depoimento">
+                <div class="card__depoimento">
                     <p>"Profissionalismo e design impecável. A equipe entendeu exatamente o que eu precisava."</p>
                     <span>- Carlos Mendes, Arquiteto</span>
                 </div>
@@ -97,8 +97,8 @@
     </section>
 
     <section id="contato" class="section bg-dark">
-        <div class="container contato-container">
-            <div class="contato-info">
+        <div class="container contato__container">
+            <div class="contato__info">
                 <h2>Vamos conversar?</h2>
                 <p>Entre em contato para um orçamento sem compromisso.</p>
                 <ul>
@@ -107,11 +107,11 @@
                     <li>✉️ contato@agenciacriativa.web</li>
                 </ul>
             </div>
-            <form class="form-contato">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu E-mail" required>
-                <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            <form class="form">
+                <input class="form__input" type="text" placeholder="Seu Nome" required>
+                <input class="form__input" type="email" placeholder="Seu E-mail" required>
+                <textarea class="form__input" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="form__btn btn-primary">Enviar Mensagem</button>
             </form>
         </div>
     </section>
