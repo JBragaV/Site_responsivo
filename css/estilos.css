@@ -96,7 +96,7 @@ body {
   cursor: pointer;
   z-index: 1001;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header__hamburger {
     display: none;
   }
@@ -139,7 +139,7 @@ body {
 .nav__list--active {
   right: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav__list {
     position: static;
     width: auto;
@@ -157,7 +157,7 @@ body {
   color: #2d3436;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav__link {
     font-size: 1rem;
   }
@@ -171,7 +171,7 @@ body {
   border-radius: 5px;
   transition: transform 0.2s;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav__btn-contato {
     padding: 0.5rem 1.2rem;
   }

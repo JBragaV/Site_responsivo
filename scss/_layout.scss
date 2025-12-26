@@ -12,7 +12,7 @@
 .section {
   padding: 3rem 0;
 
-  @media (min-width: variaveis.$break-md) {
+  @include mixins.mq-desktop {
     padding: 5rem 0;
   }
 }
