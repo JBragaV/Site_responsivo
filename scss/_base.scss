@@ -1,0 +1,19 @@
+@use 'variaveis';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: variaveis.$font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variaveis.$font-base;
+  line-height: 1.6;
+  color: variaveis.$text-color;
+  padding-top: variaveis.$header-height;
+}

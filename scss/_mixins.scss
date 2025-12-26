@@ -1,0 +1,17 @@
+@use 'variaveis';
+
+@mixin btn-primary {
+  display: inline-block;
+  background-color: variaveis.$primary-color;
+  color: variaveis.$white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+@mixin img-responsiva {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

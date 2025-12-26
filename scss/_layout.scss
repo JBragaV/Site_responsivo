@@ -1,0 +1,41 @@
+@use 'variaveis';
+@use 'mixins';
+@use 'sass:math';
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem 0 1.5rem;
+}
+
+.section {
+  padding: 3rem 0;
+
+  @media (min-width: variaveis.$break-md) {
+    padding: 5rem 0;
+  }
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.bg-light {
+  background-color: variaveis.$light-bg;
+}
+
+.bg-dark {
+  background-color: variaveis.$dark-bg;
+  color: variaveis.$white;
+}
+
+.img-responsiva {
+  @include mixins.img-responsiva;
+}
+
+.btn-primary {
+  @include mixins.btn-primary;
+}
